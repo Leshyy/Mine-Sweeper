@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+            rel="stylesheet"
+        />
+        <title>Mine Sweeper</title>
+    </head>
+    <body onload="initGame()">
+        <div class="diff-btns">
+            <button onclick="setGameSize(4,2)">easy</button>
+            <button onclick="setGameSize(8,12)">med</button>
+            <button onclick="setGameSize(12,30)">hard</button>
+        </div>
+        <div class="time-life">
+            <h2 class="time-display">Your Time:<span></span></h2>
+            <div class="life-display">
+                <h2>Life:</h2>
+                <h3>&#10084;</h3>
+                <h3>&#10084;</h3>
+                <h3>&#10084;</h3>
+            </div>
+        </div>
+        <div class="game-screen">
+            <span onclick="initGame()">&#128522;</span>
+            <div class="game-board"></div>
+        </div>
+        <script src="js/utils.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
