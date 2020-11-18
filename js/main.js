@@ -280,9 +280,6 @@ function checkWin(board) {
             if (board[i][j].isMarked && !board[i][j].isMine) {
                 return false;
             }
-            if (board[i][j].isMine && !board[i][j].isMarked) {
-                return false;
-            }
         }
     }
     document.querySelector('.game-screen span').innerHTML = WIN_EMOJI;
